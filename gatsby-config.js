@@ -1,10 +1,15 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
+const defaultLanguage = "sv"
 
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  plugins: [
+    {
+      resolve: "gatsby-plugin-i18n",
+      options: {
+        langKeyDefault: defaultLanguage,
+        langKeyForNull: defaultLanguage,
+        prefixDefault: false,
+        useLangKeyLayout: false,
+      },
+    },
+  ],
 }
