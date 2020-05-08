@@ -1,2 +1,2 @@
-import PageNotFoundSv from "./404.sv"
-export default PageNotFoundSv
+import PageNotFoundSv from "./404.sv";
+export default PageNotFoundSv;

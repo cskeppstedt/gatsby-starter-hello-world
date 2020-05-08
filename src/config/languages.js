@@ -1,2 +1,2 @@
-export const defaultLanguage = "sv"
-export const otherLanguage = "en"
+export const defaultLanguage = "sv";
+export const otherLanguage = "en";

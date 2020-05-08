@@ -1,12 +1,12 @@
-import { defaultLanguage, otherLanguage } from "../config/languages"
+import { defaultLanguage, otherLanguage } from "../config/languages";
 
-const getLang = location => {
-  const [firstPart] = location.pathname.split("/")
+const getLang = (location) => {
+  const [firstPart] = location.pathname.split("/");
   if (firstPart === otherLanguage) {
-    return firstPart
+    return firstPart;
   } else {
-    return defaultLanguage
+    return defaultLanguage;
   }
-}
+};
 
-export default getLang
+export default getLang;

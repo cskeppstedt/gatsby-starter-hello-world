@@ -1,6 +1,6 @@
-import React from "react"
-import LanguageSelector from "../LanguageSelector"
-import Navigator from "../Navigator"
+import React from "react";
+import LanguageSelector from "../LanguageSelector";
+import Navigator from "../Navigator";
 
 function Header({ lang, location }) {
   return (
@@ -8,7 +8,7 @@ function Header({ lang, location }) {
       <LanguageSelector location={location} lang={lang} />
       <Navigator lang={lang} />
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;

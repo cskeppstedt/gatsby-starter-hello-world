@@ -1,4 +1,4 @@
-const defaultLanguage = "sv"
+const defaultLanguage = "sv";
 
 module.exports = {
   plugins: [
@@ -13,4 +13,4 @@ module.exports = {
       },
     },
   ],
-}
+};

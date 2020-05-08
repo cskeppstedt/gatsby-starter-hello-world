@@ -1,10 +1,10 @@
-import React from "react"
-import { Link } from "gatsby"
-import { defaultLanguage } from "../../config/languages"
-import styles from "./Navigator.module.scss"
+import React from "react";
+import { Link } from "gatsby";
+import { defaultLanguage } from "../../config/languages";
+import styles from "./Navigator.module.scss";
 
 const toWithLang = (lang, to) =>
-  lang === defaultLanguage ? `${to}` : `/${lang}${to}`
+  lang === defaultLanguage ? `${to}` : `/${lang}${to}`;
 
 const links = [
   {
@@ -19,7 +19,7 @@ const links = [
     path: "/nowhere",
     label: { en: "Nowhere", sv: "Ingenstans" },
   },
-]
+];
 
 export default ({ lang }) => (
   <ul className={styles.list}>
@@ -31,4 +31,4 @@ export default ({ lang }) => (
       </li>
     ))}
   </ul>
-)
+);

@@ -1,6 +1,6 @@
-import React from "react"
-import Header from "../Header"
-import styles from "./Layout.module.scss"
+import React from "react";
+import Header from "../Header";
+import styles from "./Layout.module.scss";
 
 function Layout({ location, children, lang }) {
   return (
@@ -8,7 +8,7 @@ function Layout({ location, children, lang }) {
       <Header location={location} lang={lang} />
       <main className={styles.main}>{children}</main>
     </div>
-  )
+  );
 }
 
-export default Layout
+export default Layout;
