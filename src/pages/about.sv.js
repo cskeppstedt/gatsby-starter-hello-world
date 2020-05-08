@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 
-function DashboardIndex({ location }) {
+function AboutPageSv({ location }) {
   return (
     <Layout location={location} lang="sv">
       Om
@@ -9,4 +9,4 @@ function DashboardIndex({ location }) {
   )
 }
 
-export default DashboardIndex
+export default AboutPageSv

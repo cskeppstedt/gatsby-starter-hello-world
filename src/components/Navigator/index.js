@@ -14,6 +14,10 @@ const links = [
     path: "/about",
     label: { en: "About", sv: "Om" },
   },
+  {
+    path: "/nowhere",
+    label: { en: "Nowhere", sv: "Ingenstans" },
+  },
 ]
 
 export default ({ lang }) => (
