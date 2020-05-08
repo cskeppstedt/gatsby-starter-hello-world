@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/Layout"
 
-function IndexPageSv({ location }) {
+function PageNotFoundSv({ location }) {
   return (
     <Layout location={location} lang="sv">
-      Hej hej
+      Sidan kunde inte hittas
     </Layout>
   )
 }
 
-export default IndexPageSv
+export default PageNotFoundSv

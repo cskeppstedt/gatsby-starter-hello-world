@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/Layout"
 
-function AboutPageEn({ location }) {
+function PageNotFoundEn({ location }) {
   return (
     <Layout location={location} lang="en">
-      About
+      Page not found
     </Layout>
   )
 }
 
-export default AboutPageEn
+export default PageNotFoundEn
