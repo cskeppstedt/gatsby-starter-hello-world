@@ -4,7 +4,6 @@ exports.onCreatePage = async ({ page, actions }) => {
   const { createPage, deletePage } = actions
   // Check if the page is a localized 404
   if (page.path.match(RE_404_PATH)) {
-    console.log("page match", page.path)
     const oldPage = { ...page }
     // Get the language code from the path, and match all paths
     // starting with this code (apart from other valid paths)
@@ -13,7 +12,5 @@ exports.onCreatePage = async ({ page, actions }) => {
     // Recreate the modified page
     deletePage(oldPage)
     createPage(page)
-  } else {
-    console.log("page did not match", page.path)
   }
 }
