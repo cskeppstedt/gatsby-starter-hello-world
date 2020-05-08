@@ -2,7 +2,7 @@ const defaultLanguage = "sv"
 
 module.exports = {
   plugins: [
-    "gatsby-plugin-postcss",
+    "gatsby-plugin-sass",
     {
       resolve: "gatsby-plugin-i18n",
       options: {
