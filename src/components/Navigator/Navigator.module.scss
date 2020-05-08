@@ -1,0 +1,17 @@
+.list {
+  display: flex;
+  list-style: none;
+  list-style-type: none;
+  margin: 20px 0;
+}
+
+.listItem {
+  display: block;
+}
+
+.link {
+  padding: 5px 10px;
+  margin-right: 10px;
+  display: inline-block;
+  background-color: #e0e0e0;
+}

@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { defaultLanguage } from "../../config/languages"
+import styles from "./Navigator.module.scss"
 
 const toWithLang = (lang, to) =>
   lang === defaultLanguage ? `${to}` : `/${lang}${to}`
@@ -21,10 +22,12 @@ const links = [
 ]
 
 export default ({ lang }) => (
-  <ul>
+  <ul className={styles.list}>
     {links.map(({ path, label }) => (
       <li>
-        <Link to={toWithLang(lang, path)}>{label[lang]}</Link>
+        <Link className={styles.link} to={toWithLang(lang, path)}>
+          {label[lang]}
+        </Link>
       </li>
     ))}
   </ul>
