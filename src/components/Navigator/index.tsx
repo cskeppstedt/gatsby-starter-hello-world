@@ -1,9 +1,14 @@
 import React from "react";
 import { Link } from "gatsby";
-import { defaultLanguage } from "../../config/languages";
+import { defaultLanguage, AvailableLanguage } from "../../config/languages";
 import styles from "./Navigator.module.scss";
 
-const toWithLang = (lang, to) =>
+interface NavigatorProps {
+  lang: AvailableLanguage;
+  location: Location;
+}
+
+const toWithLang = (lang: AvailableLanguage, to: string) =>
   lang === defaultLanguage ? `${to}` : `/${lang}${to}`;
 
 const links = [
@@ -21,7 +26,7 @@ const links = [
   },
 ];
 
-export default ({ lang }) => (
+const Navigator: React.FC<NavigatorProps> = ({ lang }) => (
   <ul className={styles.list}>
     {links.map(({ path, label }) => (
       <li>
@@ -32,3 +37,5 @@ export default ({ lang }) => (
     ))}
   </ul>
 );
+
+export default Navigator;

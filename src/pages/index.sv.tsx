@@ -1,12 +1,13 @@
 import React from "react";
+import { PageProps } from "gatsby";
 import Layout from "../components/Layout";
 
-function AboutPageSv({ location }) {
+const IndexPageSv: React.FC<PageProps> = ({ location }) => {
   return (
     <Layout location={location} lang="sv">
-      Om
+      Hej hej
     </Layout>
   );
-}
+};
 
-export default AboutPageSv;
+export default IndexPageSv;

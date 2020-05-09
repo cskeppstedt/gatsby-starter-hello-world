@@ -1,12 +1,13 @@
 import React from "react";
+import { PageProps } from "gatsby";
 import Layout from "../components/Layout";
 
-function PageNotFoundSv({ location }) {
+const AboutPageSv: React.FC<PageProps> = ({ location }) => {
   return (
     <Layout location={location} lang="sv">
-      Sidan kunde inte hittas
+      Om
     </Layout>
   );
-}
+};
 
-export default PageNotFoundSv;
+export default AboutPageSv;
