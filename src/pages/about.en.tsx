@@ -1,12 +1,13 @@
 import React from "react";
+import { PageProps } from "gatsby";
 import Layout from "../components/Layout";
 
-function PageNotFoundEn({ location }) {
+const AboutPageEn: React.FC<PageProps> = ({ location }) => {
   return (
     <Layout location={location} lang="en">
-      Page not found
+      About
     </Layout>
   );
-}
+};
 
-export default PageNotFoundEn;
+export default AboutPageEn;
